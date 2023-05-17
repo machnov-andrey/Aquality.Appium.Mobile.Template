@@ -1,0 +1,1 @@
+# Aquality.Appium.Mobile.Template
