@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Applications\cian.apk" />
     <None Remove="Resources\Environment\Prod\config.json" />
     <None Remove="Resources\Environment\Stage\config.json" />
   </ItemGroup>
@@ -21,22 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Applications\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Resources\Applications\TheApp-v1.10.0.apk">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\Applications\TheApp-v1.10.0.app.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Resources\devices.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Applications\" />
   </ItemGroup>
 
 </Project>

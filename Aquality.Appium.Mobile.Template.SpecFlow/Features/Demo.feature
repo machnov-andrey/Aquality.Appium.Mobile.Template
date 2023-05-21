@@ -1,14 +1,14 @@
 ﻿Feature: Demo
 
 @demo
-Scenario: I try to login with invalid credentials
-	When I open 'Login Screen' view
-	Then Login Screen is opened
-    When I save Login Screen dump
-		And I log in with data:
-	  | Name     | Value           |
-	  | Username | MyUsername      |
-	  | Password | InVal1dPa$$w0rd |
-	Then 'Invalid login credentials, please try again' alert appears
-    When I accept the alert
-    Then Login Screen dump is different
+Scenario: I check filters Cian
+    When I log in in Cian with email '...' and password '...'
+	When I choose rent
+	When I fill in filters: house type - 'Комната', house size - '3'
+	When I scroll down
+	When I set price from '10000' to '30000' and set true owner check box
+	Then Expected owner indicator, house type 'Комната' and price range '10000'-'30000'
+	When I choose first offer
+	Then Expected owner indicator, house type 'Комната', price range '10000'-'30000' and house size '3'
+	When I click to show phone
+	When I close Cian

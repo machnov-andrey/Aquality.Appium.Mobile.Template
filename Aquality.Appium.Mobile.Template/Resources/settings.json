@@ -1,18 +1,19 @@
 ﻿{
   "platformName": "android",
   "isRemote": false,
-  "remoteConnectionUrl": "http://127.0.0.1:4723/wd/hub",
+  "remoteConnectionUrl": "http://0.0.0.0:4723/",
   "screensLocation": "Aquality.Appium.Mobile.Template",
 
   "driverSettings": {
     "android": {
       "deviceKey": "Android_Emulator",
       "capabilities": {
-        "app": "./Resources/Applications/TheApp-v1.10.0.apk",
+        "app": "./Resources/Applications/Cian.apk",
         "platformName": "Android",
         "automationName": "UiAutomator2",
-        "appPackage": "io.cloudgrey.the_app",
-        "appActivity": "io.cloudgrey.the_app.MainActivity",
+        "appPackage": "ru.cian.main",
+        "appActivity": "ru.cian.main.StartActivity",
+        "autoGrantPermissions": true,
         "adbExecTimeout": 60000,
         "androidInstallTimeout": 120000,
         "uiautomator2ServerInstallTimeout": 120000
